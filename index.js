@@ -138,7 +138,7 @@ if(participanteExiste) {
 }
 
 const fazerCheckIn = (event) => {
-  // confirmar se quer o check=in
+  // confirmar se quer o check-in
   const msgConfirmacao = "Tem certeza que deseja fazer o check-in?"
   
   if(confirm(msgConfirmacao) == false) {
@@ -150,7 +150,7 @@ const fazerCheckIn = (event) => {
     return p.email == event.target.dataset.email // é possível retirar as chaves e o return
   })
 
-  // att o checkin do participante
+  // att o check-in do participante
   participante.dataCheckIn = new Date()
 
   // att a lista de participantes
